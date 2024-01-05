@@ -28,7 +28,7 @@ function createDiv(size){
     div.classList.add('square');
     div.style.width = `${size - 2}px`;
     div.style.height = `${size - 2}px`;
-    div.addEventListener('mouseover', () =>{
+    div.addEventListener('click', () =>{
         div.style.backgroundColor = 'black';
     });
 
