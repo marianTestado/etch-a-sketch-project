@@ -9,6 +9,8 @@ let gridBtn = document.querySelector('#button');
 
 let gridValue = document.querySelector('#gridValue');
 
+let painting = false;
+
 gridRange.addEventListener('input',  () => {
     squareSize = gridRange.value;
     gridValue.innerText = `${squareSize}x${squareSize}`;
@@ -28,8 +30,18 @@ function createDiv(size){
     div.classList.add('square');
     div.style.width = `${size - 2}px`;
     div.style.height = `${size - 2}px`;
-    div.addEventListener('click', () =>{
-        div.style.backgroundColor = 'black';
+    div.addEventListener('mousedown', () => {
+        painting = true;
+    });
+
+    div.addEventListener('mouseup', () => {
+        painting = false;
+    });
+
+    div.addEventListener('mouseover', () => {
+        if (painting) {
+            div.style.backgroundColor = 'black';
+        }
     });
 
     return div;
