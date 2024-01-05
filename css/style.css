@@ -1,0 +1,64 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.square{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.grid{
+
+    display: flex;
+    border: 1px black solid;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 700px;
+    height:700px;
+}
+
+.button-range{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(155, 155, 155, 0.603);
+    border: solid 2px black;
+    border-radius: 25%;
+}
+
+#button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid grey;
+    height: 80px;
+    width: 160px;
+    align-self: center;
+    border-radius: 25%;
+}
+
+#gridRange{
+    color: black;
+    width: 500px;
+    align-self: center;
+    cursor: pointer;
+}
+
+#gridValue{
+
+    font-size: 30px;
+    font-weight: bold;
+}
