@@ -6,7 +6,6 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1px;
     justify-content: center;
     height: 100vh;
 }
@@ -50,6 +49,7 @@ h1{
     width: 160px;
     align-self: center;
     border-radius: 25%;
+    cursor: pointer;
 }
 
 #gridRange{
@@ -63,4 +63,24 @@ h1{
 
     font-size: 30px;
     font-weight: bold;
+}
+
+.color-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#color{
+    background-image: linear-gradient(lightgreen,yellow, orange, red, pink, violet,purple, blue, green);
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid grey;
+    height: 80px;
+    width: 160px;
+    align-self: center;
+    border-radius: 25%;
+    cursor: pointer;
 }
